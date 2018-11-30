@@ -57,13 +57,16 @@ section {
 .section05 #zoom {
     background: url(../img/s05-02.png) no-repeat 0 0;
     background-size: cover;
-    padding:15.625% 10% 29.0625%;
+    padding:18.59375% 10% 8.75%;
 }
 .section05 #zoom img {}
 .section05 #zoom img.table1 {
-    margin-bottom:25.78125%;
+    margin-bottom:29.6875%;
 }
-.section05 #zoom img.table2 {}
+.section05 #zoom img.table2 {
+    margin-bottom:6.25%;
+}
+.section05 #zoom img.text {}
 
 .toggle {
     padding-bottom:6.25%;
