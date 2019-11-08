@@ -1,0 +1,14 @@
+@charset "shift_jis";
+
+
+@media screen and ( min-width:961px ) {
+    .btn-primary {
+        margin-right:195px;
+    }
+    .btn-secondary {
+        position: fixed;
+        margin-left:-190px;
+        z-index: 10;
+    }
+}
+

@@ -1,0 +1,333 @@
+@charset "shift_jis";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	line-height:1.5;
+	letter-spacing:normal;
+	color:#f3f4e9;
+	font-size:75%;
+	background-color:#f3f4e9;
+}
+a,
+a:link,
+a:visited {
+	text-decoration:none;
+	color:#0066CC;
+}
+a:visited {
+	text-decoration:none;
+	color:#666699;
+}
+a:hover {
+	color:#CC3333;
+	text-decoration:underline;
+}
+
+ul, ol, dl {
+	list-style-type: none;
+}
+
+img,
+a img {
+	border: 0;
+}
+
+br {
+	letter-spacing:0;
+}
+
+
+#contents {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#contents .mainvisual {
+	width: 100%;
+background-image: url("../images/mainvisual_bg.jpg");
+	background-size:cover;
+	text-align: center;
+}
+
+#contents .mainvisual .inner {
+	position: relative;
+	height: 535px;
+}
+
+#contents .mainvisual .inner img {
+	position: absolute;
+}
+
+#contents .mainvisual .inner img.logo {
+	top: 10px;
+	left: 20px;
+}
+#contents .mainvisual .inner h1 img {
+	top: 100px;
+	right: 50px;
+}
+
+#contents .mainvisual .inner .btn-group {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+
+#contents h2 {
+	width: 100%;
+	background-color: #ed6f2b;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+	font-size: 22px;
+	font-family: "繝偵Λ繧ｮ繝手ｧ偵ざ Pro W3", "Hiragino Kaku Gothic Pro", "繝｡繧､繝ｪ繧ｪ", Meiryo, Osaka, "�ｭ�ｳ �ｰ繧ｴ繧ｷ繝�け", "MS PGothic", "sans-serif"
+}
+
+#contents h2.pink {
+	background-color: #ee819c;
+}
+
+#contents div.inner {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+
+
+
+/* UIS */
+
+.btn {
+  display: inline-block;
+  width: 150px;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 0;
+  white-space: nowrap;
+  padding: 5px 20px;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.8;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn.square {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  padding: 0;
+}
+
+.btn:link, .btn:visited {
+  color: #ffffff;
+}
+
+.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover, .btn:focus, .btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active, .btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a.btn.disabled, fieldset[disabled] a.btn {
+  pointer-events: none;
+}
+
+
+.btn-secondary {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.btn-secondary:focus, .btn-secondary.focus {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-secondary:active, .btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.btn-secondary:active:hover, .btn-secondary:active:focus, .btn-secondary:active.focus, .btn-secondary.active:hover, .btn-secondary.active:focus, .btn-secondary.active.focus, .open > .btn-secondary.dropdown-toggle:hover, .open > .btn-secondary.dropdown-toggle:focus, .open > .btn-secondary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.btn-secondary:active, .btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+  background-image: none;
+}
+.btn-secondary.disabled:hover, .btn-secondary.disabled:focus, .btn-secondary.disabled.focus, .btn-secondary[disabled]:hover, .btn-secondary[disabled]:focus, .btn-secondary[disabled].focus, fieldset[disabled] .btn-secondary:hover, fieldset[disabled] .btn-secondary:focus, fieldset[disabled] .btn-secondary.focus {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.btn-secondary .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #288755;
+  border-color: #113768;
+}
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #4fa678;
+  border-color: #2471d5;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #4fa678;
+  border-color: #2471d5;
+}
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #288755;
+  border-color: #1b55a0;
+}
+.btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
+  color: #fff;
+  background-color: #1b55a0;
+  border-color: #113768;
+}
+.btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
+  background-image: none;
+}
+.btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus {
+  background-color: #4fa678;
+  border-color: #2471d5;
+}
+.btn-primary .badge {
+  color: #4fa678;
+  background-color: #fff;
+}
+
+
+/* MODAL */
+.modal--fade .modal-inner, .semantic-content .modal-inner, .modal--show .modal-inner {
+	position: relative;
+	font-size: 16px;
+	border-radius: 20px;
+	border: 2px solid #ddd;
+}
+
+.modal--fade .modal-content, .semantic-content .modal-content, .modal--show .modal-contentt {
+	border-bottom: none;
+	min-height: 550px;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.semantic-content h3 {
+	text-align: center;
+	font-size: 175%;
+	margin: 25px 0;
+}
+.semantic-content .btn-group {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.semantic-content dl {
+	margin-bottom :15px;
+
+}
+.semantic-content dl dt {
+	float: left;
+	width: 175px;
+	font-size: 110%;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+}
+.semantic-content dl dd {
+	width: auto;
+	margin-left: 195px;
+}
+.semantic-content dl dt span {
+	display: block;
+	font-size: 90%;
+	color: red;
+	line-height: 1.4em;
+}
+.semantic-content dl dd input, .semantic-content dl dd span {
+	width: 100%;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 5px;
+}
+
+.semantic-content p {
+	font-size: 110%;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.semantic-content .modal-close {
+	display: inline-block;
+	text-indent: 0;
+	margin: 0;
+}
+
+.semantic-content .modal-close:before, .semantic-content .modal-close:after {
+	display: none;
+}
+
+.semantic-content .modal-inner .modal-content a.modal-close.square {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	clip: auto;
+	font-size: 28px;
+	font-weight: blod;
+}
